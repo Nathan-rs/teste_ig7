@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use Ap´p\Models\Escola;
+use App\Models\Escola;
 use App\Models\Turma;
 use Illuminate\Database\Eloquent\Factories\Factory;
 

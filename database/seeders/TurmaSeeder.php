@@ -17,7 +17,7 @@ class TurmaSeeder extends Seeder
         $escolas = Escola::all();
 
         foreach ($escolas as $escola) {
-            Turma::factory()->count(10)->create(['id_escola' => $escola->id]);
+            Turma::factory()->create(['id_escola' => $escola->id]);
         }
     }
 }
