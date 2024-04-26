@@ -5,7 +5,7 @@
 <main class="content px-3 py-2">
     <div class="container-fluid">
     <div class="mb-1">
-        <h4>Escola</h4>
+        <h4>Turmas</h4>
     </div>
 
     <div class="text-end md-5">
@@ -14,7 +14,7 @@
 
     <div class="card border-0 shadow p-3 mb-3 bg-body-tertiary rounded">
         <div class="card-header">
-            <h5 class="card-title">Escolas cadastradas</h5>
+            <h5 class="card-title">Turmas cadastradas</h5>
         </div>
         <div class="card-body">
             <table class="table">
@@ -37,7 +37,7 @@
                         <td>{{ $escola->inep }}</td>
                         <td>{{ $escola->status }}</td>
                         <td>
-                            <div class="d-flex p-1 align-items-start">
+                            <div class="d-flex p-2 align-items-start">
                                 <a href="#modalEscolaEdit{{$escola->id}}" data-bs-toggle="modal" class="btn btn-primary">
                                     Editar
                                 </a>
@@ -59,12 +59,3 @@
 </main>
 @include('escola.create_escola')
 @endsection
-
-<!-- <div class="d-flex p-2 align-items-start">
-<button class="btn">
-<i class="fa-solid fa-pen-to-square"></i>
-</button>
-<button class="btn">
-<i class="fa-solid fa-trash"></i>
-</button>
-</div> -->

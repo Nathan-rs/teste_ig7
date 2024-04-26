@@ -23,7 +23,7 @@ class TurmaFactory extends Factory
     {
         return [
             'id_escola' => Escola::factory(),
-            'status' => $this->faker->randomElement(['Ativa', 'Inativa']),
+            'status' => $this->faker->randomElement(['ativa', 'inativa']),
             'turno' => $this->faker->randomElement(['Manhã', 'Tarde', 'Noite']),
             'nome' => $this->faker->company,
         ];

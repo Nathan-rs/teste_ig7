@@ -21,7 +21,7 @@ class EscolaFactory extends Factory
     public function definition(): array
     {
         return [
-            'status' => $this->faker->randomElement(['Ativa', 'Inativa']),
+            'status' => $this->faker->randomElement(['ativa', 'inativa']),
             'inep' => $this->faker->unique()->numerify('##########'),
             'endereco' => $this->faker->address,
             'nome' => $this->faker->company,

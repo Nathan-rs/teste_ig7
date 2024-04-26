@@ -32,17 +32,31 @@ class EscolaController extends Controller {
         $escola->save();
 
         return redirect()->back()->with('success', 'Escola criada com sucesso.');
-
-        // return redirect()->route('escola.index');
     }
 
     public function show(Escola $escola) {
         return view('escola.show', compact('escola'));
     }
 
-    public function edit($id) {
+    public function edit(Request $request, $id) {
+
+        $request->validate([
+            'nome' => 'required|string|max:255',
+            'endereco' => 'required|string|max:255',
+            'inep' => 'required|numeric|min:0',
+            'status' => 'required|in:ativa,inativa',
+        ]);
+
         $escola = Escola::findOrFail($id);
-        return view('escola.update_escola', compact('escola'));
+
+        $escola->nome = $request->input('nome');
+        $escola->endereco = $request->input('endereco');
+        $escola->inep = $request->input('inep');
+        $escola->status = $request->input('status');
+
+        $escola->save();
+
+        return redirect()->back()->with('success', 'Escola atualizada com sucesso.');
     }
 
     public function update(Request $request, Escola $escola) {
@@ -50,19 +64,9 @@ class EscolaController extends Controller {
         return redirect()->route('escola.show');
     }
 
-    public function destroy(Escola $escola) {
+    public function destroy($id) {
+        $escola = Escola::findOrFail($id);
         $escola->delete();
-        return redirect()->route('escola.index');
+        return redirect()->back()->with('success', 'Escola deletada com sucesso.');
     }
-
-    // $escola = Escola::findOrFail($id);
-
-        // $escola->update([
-        //     'nome' => $request->input('nome'),
-        //     'endereco' => $request->input('endereco'),
-        //     'inep' => $request->input('inep'),
-        //     'status' => $request->input('status')
-        // ]);
-
-        // return redirect()->route('escolas.index')->with('success', 'Escola atualizada com sucesso!');
 }

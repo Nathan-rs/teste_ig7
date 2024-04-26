@@ -50,7 +50,7 @@
           <a class="nav-link {{ Request::is('turma') ? 'active' : '' }}" href="#">Turma</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ Request::is('professor') ? 'active' : '' }}" href="#" aria-disabled="true">Professor</a>
+          <a class="nav-link {{ Request::is('professor') ? 'active' : '' }}" href="{{route('professor.show')}}">Professor</a>
         </li>
       </ul>
     </div>
