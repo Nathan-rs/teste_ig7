@@ -10,7 +10,7 @@ class TurmaController extends Controller {
 
     public function index() {
         $turmas = Turma::paginate(5);
-        $escolas = Escola::all();
+        $escolas = Escola::where('status', 'ativa')->get();
         return view('turma.show', compact('turmas', 'escolas'));
     }
 

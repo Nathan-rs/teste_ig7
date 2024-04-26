@@ -1,66 +1,148 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="#" target="_blank"><img src="./images/app-home.png" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
 
-## About Laravel
+## Teste PHP IG7-Sistemas
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Esse teste é uma aplicação em laravel para gerenciamento de algumas entidades de uma escola, e tem como objetivo avaliar os conhecimentos do candidato.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 💻 Demostração da aplicação
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+Pagina Home:
+<h1 align="center"> 
+  <img src="./images/app-home.png" />
+</h1>
 
-## Learning Laravel
+Pagina Escola com as modais de adição, edição e exclusão:
+<h1 align="center">
+  <img src="./images/app-modal-escola.png" />
+</h1>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+<h1 align="center">
+  <img src="./images/app-modal-escola-edit.png" />
+</h1>
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<h1 align="center">
+  <img src="./images/app-modal-escola-delete.png" />
+</h1>
 
-## Laravel Sponsors
+Pagina Turma com as modais de adição, edição e exclusão:
+<h1 align="center">
+  <img src="./images/app-modal-turma-select-1.png" />
+</h1>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+<h1 align="center">
+  <img src="./images/app-modal-turma-edit.png" />
+</h1>
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+<h1 align="center">
+  <img src="./images/app-modal-turma-delete.png" />
+</h1>
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Pagina Professor com as modais de adição, edição e exclusão:
+<h1 align="center">
+  <img src="./images/app-modal-professor.png" />
+</h1>
 
-## Code of Conduct
+<h1 align="center">
+  <img src="./images/app-modal-professor-edit.png" />
+</h1>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
-## Security Vulnerabilities
+<h1 align="center">
+  <img src="./images/app-modal-professor-delete.png" />
+</h1>
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 🚀 Começando
 
-## License
+Para iniciar o projeto sigua as instruções destacadas logo abaixo para não ter problema ao executar.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### 📋 Pré-requisitos
+
+Você precisa ter em sua marquina as seguintes tecnologias:
+
+* PHP - Linguagem de programação usada no desenvolvimento
+
+* NODEJS - Platarfome V8 para executar javascript fora do navegador
+
+* MYSQL - Banco de dados relacional
+
+* COMPOSER - Gerenciar de dependência de PHP
+
+### 🔧 Instalação
+
+Faça um clone do projeto
+
+```
+git clone https://github.com/Nathan-rs/teste_ig7.git
+```
+
+Logo em seguida baixe as dependências via composer e via npm
+
+Dentro da pasta teste_ig7 execute respectivamente
+
+```
+composer install
+```
+
+```
+npm install
+```
+
+Após finalizar a instalação de cada dependência, precisa criar um arquivo .env e colocar as configurações do banco MYSQL
+
+Exemplo:
+
+```
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=root
+```
+
+Configurado o arquivo .env precisa gerar um chave para pode acessar a aplicação. Execute o comando
+
+```
+php artisan key:generate
+```
+
+Execute as migrações no banco de dados:
+
+```
+php artisan migrate
+```
+
+Caso queira popular o banco. Use a seeder para isso:
+
+Seeder Escola
+```
+php artisan db:seed --class=EscolaSeeder
+```
+
+Seeder Professor
+```
+php artisan db:seed --class=ProfessorSeeder
+```
+
+Seeder Turma
+```
+php artisan db:seed --class=TurmaSeeder
+```
+
+Aguarde a aplicação carregar os estilos do Bootstrap 5 e pronto.
+
+
+## ✒️ Autore
+
+Esse projeto foi desenvolvido por:
+* Natã Ramos da Silva - Desenvolvedor web
+
+
+---
+⌨️ 🚀 por [Natã Ramos da Silva](https://github.com/Nathan-rs) 😊
