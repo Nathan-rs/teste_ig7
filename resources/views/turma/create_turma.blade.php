@@ -1,24 +1,34 @@
-<div class="modal fade" id="modalEscola" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" data-bs-backdrop="static" id="modalTurma" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastrar Escola</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastra Turma</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form action="{{ route('escola.create') }}" method="POST">
-            @csrf <!-- Adiciona o token CSRF -->
+          <form action="{{ route('turma.create') }}" method="POST">
+            @csrf
             <div class="mb-3">
-              <label for="recipient-name" class="col-form-label">Nome</label>
-              <input type="text" class="form-control" id="recipient-name" name="nome">
+              <label for="recipient-escola" class="col-form-label">Selecione a Escola</label>
+                <select class="form-select" id="recipient-escola" name="id_escola">
+                    <option value="">Selecione uma escola</option>
+                        @foreach($escolas as $escola)
+                            <option value="{{ $escola->id }}">{{ $escola->nome }}</option>
+                        @endforeach
+                </select>
             </div>
             <div class="mb-3">
-              <label for="recipient-endereco" class="col-form-label">Endereço</label>
-              <input type="text" class="form-control" id="recipient-endereco" name="endereco">
+              <label for="recipient-turno" class="col-form-label">Selecione o Turno</label>
+                <select class="form-select" id="recipient-turno" name="turno">
+                    <option value="">Selecione um turno</option>
+                    <option value="Manhã">Manhã</option>
+                    <option value="Tarde">Tarde</option>
+                    <option value="Noite">Noite</option>
+                </select>
             </div>
             <div class="mb-3">
-              <label for="recipient-inep" class="col-form-label">INEP</label>
-              <input type="number" class="form-control" id="recipient-inep" min="0" name="inep">
+              <label for="recipient-nome" class="col-form-label">Nome</label>
+              <input type="text" class="form-control" id="recipient-nome" name="nome">
             </div>
             <div class="mb-3">
               <label for="recipient-status" class="col-form-label">Status</label><br>

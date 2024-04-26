@@ -12,7 +12,7 @@
         <a href="#" data-bs-toggle="modal" data-bs-target="#modalEscola" class="btn btn-primary mb-2">Novo</a>
     </div>
 
-    <div class="card border-0 shadow p-3 mb-3 bg-body-tertiary rounded">
+    <div class="card border-0 shadow p-1 mb-3 bg-body-tertiary rounded">
         <div class="card-header">
             <h5 class="card-title">Escolas cadastradas</h5>
         </div>

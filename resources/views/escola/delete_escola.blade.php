@@ -8,7 +8,7 @@
         </div>
         <div class="modal-body">
             <div class="mb-3">
-                <span>{{$escola->nome}}</span>
+                <h6>Deseja apagar a Escola: {{$escola->nome}}</h6>
             </div>
         </div>
         <div class="modal-footer">

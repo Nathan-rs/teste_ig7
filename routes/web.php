@@ -1,14 +1,13 @@
 <?php
 
 use App\Http\Controllers\EscolaController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfessorController;
 use App\Http\Controllers\TurmaController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/', function () {
-    return view('layouts.app');
-})->name('home');
+Route::get('/home', [HomeController::class, 'index'])->name('home.show');
 
 
 Route::get('/escola',[EscolaController::class, 'index'])->name('escola.show');

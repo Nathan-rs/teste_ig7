@@ -34,20 +34,20 @@
 
 <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Teste IG7-Sistema</a>
+    <a class="navbar-brand" href="{{route('home.show')}}">Teste IG7-Sistema</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link {{ Request::is('/') ? 'active' : '' }}" aria-current="page" href="{{route('home')}}">Home</a>
+          <a class="nav-link {{ Request::is('home') ? 'active' : '' }}" aria-current="page" href="{{route('home.show')}}">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link {{ Request::is('escola') ? 'active' : '' }}" href="{{route('escola.show')}}">Escola</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {{ Request::is('turma') ? 'active' : '' }}" href="#">Turma</a>
+          <a class="nav-link {{ Request::is('turma') ? 'active' : '' }}" href="{{route('turma.show')}}">Turma</a>
         </li>
         <li class="nav-item">
           <a class="nav-link {{ Request::is('professor') ? 'active' : '' }}" href="{{route('professor.show')}}">Professor</a>

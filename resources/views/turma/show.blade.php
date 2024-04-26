@@ -9,10 +9,10 @@
     </div>
 
     <div class="text-end md-5">
-        <a href="#" data-bs-toggle="modal" data-bs-target="#modalEscola" class="btn btn-primary mb-2">Novo</a>
+        <a href="#" data-bs-toggle="modal" data-bs-target="#modalTurma" class="btn btn-primary mb-2">Novo</a>
     </div>
 
-    <div class="card border-0 shadow p-3 mb-3 bg-body-tertiary rounded">
+    <div class="card border-0 shadow p-1 mb-3 bg-body-tertiary rounded">
         <div class="card-header">
             <h5 class="card-title">Turmas cadastradas</h5>
         </div>
@@ -21,41 +21,41 @@
                 <thead class="table-dark">
                     <tr>
                         <th scope="col">ID</th>
-                        <th scope="col">Nome</th>
-                        <th scope="col">Endereco</th>
-                        <th scope="col">INEP</th>
+                        <th scope="col">Escola</th>
                         <th scope="col">Status</th>
-                        <th scope="col">Config</th>
+                        <th scope="col">Turno</th>
+                        <th scope="col">Nome</th>
+                        <th class="text-end" scope="col">Config</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @foreach($escolas as $escola)
+                    @foreach($turmas as $turma)
                     <tr>
-                        <td>{{ $escola->id }}</td>
-                        <td>{{ $escola->nome }}</td>
-                        <td>{{ $escola->endereco }}</td>
-                        <td>{{ $escola->inep }}</td>
-                        <td>{{ $escola->status }}</td>
+                        <td>{{ $turma->id }}</td>
+                        <td>{{ $turma->escola->nome }}</td>
+                        <td>{{ $turma->status }}</td>
+                        <td>{{ $turma->turno }}</td>
+                        <td>{{ $turma->nome }}</td>
                         <td>
-                            <div class="d-flex p-2 align-items-start">
-                                <a href="#modalEscolaEdit{{$escola->id}}" data-bs-toggle="modal" class="btn btn-primary">
+                            <div class="d-flex p-2 align-items-start justify-content-end">
+                                <a href="#modalTurmaEdit{{$turma->id}}" data-bs-toggle="modal" class="btn btn-primary">
                                     Editar
                                 </a>
-                                <a href="#modalEscolaDel{{$escola->id}}" data-bs-toggle="modal" class="btn btn-danger ms-2">
+                                <a href="#modalTurmaDel{{$turma->id}}" data-bs-toggle="modal" class="btn btn-danger ms-2">
                                     excluir
                                 </a>
                             </div>
+                            @include('turma.update_turma')
+                            @include('turma.delete_turma')
                         </td>
-                        @include('escola.update_escola')
-                        @include('escola.delete_escola')
                     </tr>
                     @endforeach
                 </tbody>
             </table>
         </div>
     </div>
-    {{$escolas->onEachSide(5)->links()}}
+    {{$turmas->onEachSide(5)->links()}}
 </div>
 </main>
-@include('escola.create_escola')
 @endsection
+@include('turma.create_turma')
