@@ -1,7 +1,5 @@
-<p align="center"><a href="#" target="_blank"><img src="./images/app-home.png" width="400" alt="Laravel Logo"></a></p>
+<p align="center"><a href="#" target="_blank"><img src="./images/app-home.png"></a></p>
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
 
 ## Teste PHP IG7-Sistemas
 
@@ -11,50 +9,50 @@ Esse teste é uma aplicação em laravel para gerenciamento de algumas entidades
 
 Pagina Home:
 <h1 align="center"> 
-  <img src="./images/app-home.png" />
+  <img src="./images/app-home.png" width="800" />
 </h1>
 
 Pagina Escola com as modais de adição, edição e exclusão:
 <h1 align="center">
-  <img src="./images/app-modal-escola.png" />
+  <img src="./images/app-modal-escola.png" width="800" />
 </h1>
 
 <h1 align="center">
-  <img src="./images/app-modal-escola-edit.png" />
+  <img src="./images/app-modal-escola-edit.png" width="800" />
 </h1>
 
 
 <h1 align="center">
-  <img src="./images/app-modal-escola-delete.png" />
+  <img src="./images/app-modal-escola-delete.png" width="800" />
 </h1>
 
 Pagina Turma com as modais de adição, edição e exclusão:
 <h1 align="center">
-  <img src="./images/app-modal-turma-select-1.png" />
+  <img src="./images/app-modal-turma-select-1.png" width="800" />
 </h1>
 
 <h1 align="center">
-  <img src="./images/app-modal-turma-edit.png" />
+  <img src="./images/app-modal-turma-edit.png" width="800" />
 </h1>
 
 
 <h1 align="center">
-  <img src="./images/app-modal-turma-delete.png" />
+  <img src="./images/app-modal-turma-delete.png" width="800" />
 </h1>
 
 
 Pagina Professor com as modais de adição, edição e exclusão:
 <h1 align="center">
-  <img src="./images/app-modal-professor.png" />
+  <img src="./images/app-modal-professor.png" width="800" />
 </h1>
 
 <h1 align="center">
-  <img src="./images/app-modal-professor-edit.png" />
+  <img src="./images/app-modal-professor-edit.png" width="800" />
 </h1>
 
 
 <h1 align="center">
-  <img src="./images/app-modal-professor-delete.png" />
+  <img src="./images/app-modal-professor-delete.png" width="800" />
 </h1>
 
 ## 🚀 Começando
