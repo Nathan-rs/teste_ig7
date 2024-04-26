@@ -35,11 +35,12 @@
                                 <a href="#modalProfessorEdit{{$professor->id}}" data-bs-toggle="modal" class="btn btn-primary">
                                     Editar
                                 </a>
-                                <a href="#" data-bs-toggle="modal" class="btn btn-danger ms-2">
+                                <a href="#modalProfessorDel{{$professor->id}}" data-bs-toggle="modal" class="btn btn-danger ms-2">
                                     excluir
                                 </a>
                             </div>
                             @include('professor.update_professor')
+                            @include('professor.delete_professor')
                         </td>
                     </tr>
                     @endforeach
